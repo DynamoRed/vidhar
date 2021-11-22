@@ -5,6 +5,7 @@ export let state = () => ({
         {code: 'en', name: 'English'},
         {code: 'es', name: 'Español'},
         {code: 'fi', name: 'Suomalainen'},
+        {code: 'de', name: 'Deutsch'},
     ]
 })
 

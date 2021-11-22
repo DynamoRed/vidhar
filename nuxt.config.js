@@ -47,6 +47,7 @@ export default {
       { code: 'es', iso: 'es-ES', file: 'es-ES.js' },
       { code: 'fr', iso: 'fr-FR', file: 'fr-FR.js' },
       { code: 'fi', iso: 'fi-FI', file: 'fi-FI.js' },
+      { code: 'de', iso: 'de-DE', file: 'de-DE.js' },
     ],
     defaultLocale: 'en',
     defaultDirection: 'ltr',
