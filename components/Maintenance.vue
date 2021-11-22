@@ -13,11 +13,6 @@
 
 <script>
     export default {
-        data(){
-            return {
-                pageTitle: `Maintenance en cours...`,
-            }
-        },
         head() {
             return {
                 title: this.$t('maintenance.title'),
