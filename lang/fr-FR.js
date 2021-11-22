@@ -6,7 +6,8 @@ export default {
     error: {
         title: `Erreur`,
         e404: `Whoops ! Page introuvable...`,
-        eother: `Hmm, c'est embarrassant...<br>Une erreur s'est produite !`,
+        eOtherMain: `Hmm, c'est embarrassant...`,
+        description: `Une erreur s'est produite !`,
         goback: `Retour en lieu sûr`,
     }
 }

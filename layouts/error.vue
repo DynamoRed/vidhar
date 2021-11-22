@@ -2,7 +2,7 @@
     <div class="error-page">
         <h1>{{$t('error.title')}} {{error.statusCode}}</h1>
         <span v-if="error.statusCode === 404">{{$t('error.e404')}}</span>
-        <span v-else>{{$t('error.eother')}}</span>
+        <span v-else>{{$t('error.eOtherMain')}}<br>{{$t('error.description')}}</span>
         <NuxtLink to="/" class="btn-primary btn-main btn-back">{{$t('error.goback')}}</NuxtLink>
     </div>
 </template>
@@ -10,14 +10,9 @@
 <script>
     export default {
         props: ['error'],
-        data(){
-            return {
-                pageTitle: `Une erreur est survenue !`,
-            }
-        },
         head() {
             return {
-                title: this.pageTitle,
+                title: this.$t('error.description'),
             }
         },
     }

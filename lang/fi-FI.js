@@ -6,7 +6,8 @@ export default {
     error: {
         title: `Virhe`,
         e404: `Whoops ! Sivua ei löydy...`,
-        eother: `Hmm, se on kiusallista...<br>Tapahtui virhe !`,
+        eOtherMain: `Hmm, se on kiusallista...`,
+        description: `Tapahtui virhe !`,
         goback: `Palaa turvalliseen paikkaan`,
     }
 }
