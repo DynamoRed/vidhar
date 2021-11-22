@@ -1,0 +1,81 @@
+:root {
+    --primary-clr: #A4161A;
+    --secondary-clr: #660708;
+    --tertiary-clr: #E5383B;
+
+    --background-clr: #0B090A;
+    --light-gray-clr: #D3D3D3;
+    --gray-clr: #161A1D;
+    --black-clr: #0B090A;
+    --white-clr: #F5F3F4;
+
+    --default-ft: 'Geometria';
+    --paragraph-ft: 'AllianceNo2';
+    --header-ft: 'MVB';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: var(--default-ft);
+}
+
+body {    
+    font-size: 14px;
+}
+
+body.loaded * {
+    transition: color .3s;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--header-ft);
+}
+
+p {
+    font-family: var(--paragraph-ft);
+}
+
+a {
+    font-family: var(--default-ft);
+}
+
+img {
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--background-clr);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--secondary-clr);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-clr);
+    border-radius: 10px;
+    border: var(--background-clr) 2px solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-clr);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--background-clr);
+}
+
+::-moz-selection {
+    background: var(--secondary-clr);
+    color: var(--white-clr);
+    -webkit-text-fill-color: var(--white-clr);
+}
+
+::selection {
+    background: var(--secondary-clr);
+    color: var(--white-clr);
+    -webkit-text-fill-color: var(--white-clr);
+}

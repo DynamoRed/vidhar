@@ -1,0 +1,30 @@
+{
+  "name": "dynamored-web-base",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.2.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.8",
+    "nuxt-i18n": "^6.28.1"
+  },
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DynamoRed/web-base.git"
+  },
+  "author": "DynamoRed",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DynamoRed/web-base/issues"
+  },
+  "homepage": "https://github.com/DynamoRed/web-base#readme"
+}
