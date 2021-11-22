@@ -29,11 +29,12 @@
   .langs {
     cursor: pointer;
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    left: 24px;
+    top: 20px;
     padding: 4px 8px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
   }
 
   .langs img.menu-icon {
@@ -44,7 +45,9 @@
     object-fit: cover;
   }
 
-  .langs:hover {
+  .langs:hover,
+  .langs:active {
+    cursor: default;
     border-radius: 14px;
     background-color: var(--background-clr);
   }
