@@ -1,12 +1,5 @@
 export let state = () => ({
-    maintenance: true,
-    availableLangs: [
-        {code: 'fr', name: 'Français'},
-        {code: 'en', name: 'English'},
-        {code: 'es', name: 'Español'},
-        {code: 'fi', name: 'Suomalainen'},
-        {code: 'de', name: 'Deutsch'},
-    ]
+    maintenance: true
 })
 
 export const getters = {

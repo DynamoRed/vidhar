@@ -16,7 +16,7 @@
         return this.$store.state.main.maintenance;
       },
       langs(){
-        return this.$store.state.main.availableLangs;
+        return this.$i18n.locales;
       },
       locale(){
         return this.$i18n.locale;

@@ -42,18 +42,27 @@ export default {
   ],
 
   i18n: {
+    baseUrl: 'https://dynamored.com',
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.js' },
-      { code: 'es', iso: 'es-ES', file: 'es-ES.js' },
-      { code: 'fr', iso: 'fr-FR', file: 'fr-FR.js' },
-      { code: 'fi', iso: 'fi-FI', file: 'fi-FI.js' },
-      { code: 'de', iso: 'de-DE', file: 'de-DE.js' },
+      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'English' },
+      { code: 'es', iso: 'es-ES', file: 'es-ES.js', name: 'Español' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr-FR.js', name: 'Français' },
+      { code: 'fi', iso: 'fi-FI', file: 'fi-FI.js', name: 'Suomalainen' },
+      { code: 'de', iso: 'de-DE', file: 'de-DE.js', name: 'Deutsch' },
     ],
     defaultLocale: 'en',
     defaultDirection: 'ltr',
     sortRoutes: true,
-    strategy: 'prefix_except_default',
+    strategy: 'prefix',
     langDir: 'lang/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'lang',
+    },
+    vueI18n: {
+      fallbackLocale: ['en', 'fr'],
+    },
+    parsePages: true,
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

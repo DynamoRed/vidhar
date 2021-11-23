@@ -1,6 +1,6 @@
 export default {
     maintenance: {
-        title: 'Nykyinen huolto...',
+        title: 'Parhaillaan ylläpidon alla...',
         description: `Näyttää siltä, että sivustoni on parhaillaan ylläpidon alla`,
     },
     error: {

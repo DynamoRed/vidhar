@@ -1,6 +1,6 @@
 export default {
     maintenance: {
-        title: 'Mantenimiento actual...',
+        title: 'Actualmente en mantenimiento...',
         description: `Parece que mi sitio está actualmente en mantenimiento`,
     },
     error: {

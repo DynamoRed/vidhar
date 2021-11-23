@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="switchLocalePath(`${lang.code}`)" class="lang">
+    <NuxtLink :to="switchLocalePath(`${lang.code}`)" class="lang" :class="{ active: isActive }">
         <img :src="require(`~/assets/icons/Flags/${lang.code}.svg`)">
         {{lang.name}}
     </NuxtLink>
@@ -9,6 +9,11 @@
     export default {
         name: 'LangOption',
         props: ['lang'],
+        computed: {
+            isActive(){
+                return this.$i18n.locale == this.lang.code;
+            },
+        },
     }
 </script>
 
@@ -28,7 +33,7 @@
         transition: border-color .3s;
     }
 
-    .lang.nuxt-link-exact-active {
+    .lang.active {
         border-color: var(--primary-clr);
     }
 

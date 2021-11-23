@@ -1,6 +1,6 @@
 export default {
     maintenance: {
-        title: 'Aktuelle Wartung...',
+        title: 'Seite wird derzeit gewartet...',
         description: `Anscheinend wird meine Seite gerade gewartet`,
     },
     error: {
